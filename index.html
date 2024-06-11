@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img
+          class="object-cover max-h-12 max-w-12"
+          src="./web images/clogo.png"
+          alt="Logo"
+          srcset=""
+        />
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+      </a>
+
+      <div id="nav-menu" class="hidden lg:flex gap-12">
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">ChangeLog</a>
+        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+        <a href="#" class="font-medium hover:text-primary">LogIn</a>
+      </div>
+
+      <button
+        class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600"
+      >
+        <img src="./web images/asset 1.svg" alt="" />
+        Electron Developers
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-700"></i>
+      </button>
+
+      <div
+        id="nav-dialog"
+        class="hidden fixed z-10 lg:hidden bg-white inset-0 p-3"
+      >
+        <div id="nav-bar" class="flex justify-between">
+          <a href="#" id="brand" class="flex gap-2 items-center">
+            <img
+              class="object-cover max-h-12 max-w-12"
+              src="./web images/clogo.png"
+              alt="Logo"
+              srcset=""
+            />
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+          </a>
+          <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-700"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="m-3 p-3 font-medium hover:bg-gray-50 block rounded-lg"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="m-3 p-3 font-medium hover:bg-gray-50 block rounded-lg"
+            >Docs</a
+          >
+          <a
+            href="#"
+            class="m-3 p-3 font-medium hover:bg-gray-50 block rounded-lg"
+            >ChangeLog</a
+          >
+          <a
+            href="#"
+            class="m-3 p-3 font-medium hover:bg-gray-50 block rounded-lg"
+            >Blogs</a
+          >
+          <a
+            href="#"
+            class="m-3 p-3 font-medium hover:bg-gray-50 block rounded-lg"
+            >LogIn</a
+          >
+        </div>
+        <div class="h-[1px] bg-gray-300"></div>
+        <button
+          class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50"
+        >
+          <img src="./web images/asset 1.svg" alt="" />
+          Electron Developers
+          <!-- <i class="fa-solid fa-arrow-right"></i> -->
+        </button>
+      </div>
+    </nav>
+  </body>
+  <script src="script.js"></script>
+</html>
