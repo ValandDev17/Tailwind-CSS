@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base{
+    html,body{
+        overflow-x: hidden
+    }
     body{
         @apply font-body;
     }

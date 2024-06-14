@@ -9,14 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./web images/clogo.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <!-- Navbar -->
   <nav class="p-3 flex bg-white justify-between items-center">
     <a href="#" id="brand" class="flex gap-2 items-center flex-1">
-      <img class="object-cover max-h-12 max-w-12" src="./web images/clogo.png" alt="Logo" srcset="" />
-      <span class="text-lg font-medium font-display">ToDesktop</span>
+      <img class="object-cover max-h-12 max-w-12" src="./web images/clogo.png" alt="Logo" />
+      <span class="text-lg font-bold font-display" title="ToDesktop">ToDesktop</span>
     </a>
 
     <div id="nav-menu" class="hidden lg:flex gap-12">
@@ -44,7 +45,7 @@
       <div id="nav-bar" class="flex justify-between">
         <a href="#" id="brand" class="flex gap-2 items-center">
           <img class="object-cover max-h-12 max-w-12" src="./web images/clogo.png" alt="Logo" srcset="" />
-          <span class="text-lg font-medium font-display">ToDesktop</span>
+          <span class="text-lg font-bold font-display">ToDesktop</span>
         </a>
         <button class="p-2 lg:hidden" onclick="handleMenu()">
           <i class="fa-solid fa-xmark text-gray-700"></i>
@@ -66,7 +67,7 @@
     </div>
   </nav>
 
-  <!-- Main -->
+  <!-- Main -->.
   <main>
     <!-- hero section -->
     <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
@@ -172,21 +173,8 @@
               <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 29.png" alt="">
               <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
             </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 3.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 3.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 3.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
+
+
           </div>
           <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear ">
             <div
@@ -244,21 +232,7 @@
               <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 13.png" alt="">
               <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
             </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 14.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 15.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
-            <div
-              class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-w-32 md:min-h-32">
-              <img class="w-12 h-12 md:w-16 md:h-16" src="./web images/asset 16.png" alt="">
-              <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
-            </div>
+
           </div>
           <div id="line3" class="flex md:hidden gap-4 w-screen -translate-x-48 transition-transform ease-linear ">
             <div
@@ -332,12 +306,158 @@
               <span class="text-[12px] md:text-[16px] font-semibold">Unbounce</span>
             </div>
 
+          </div>
         </div>
+
+
       </div>
 
-      <div class="h-[1000px]"></div>
+      <!-- Step by step -->
+
+      <div id="steps" class="flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16 mx-auto lg:mt-10">
+        <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
+        <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div class="flex flex-col gap-6 lg:w-1/2">
+            <span
+              class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step
+              1</span>
+            <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+            <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app
+              icon and window frame UI with no code.</p>
+            <ul class="grid grid-cols-2 gap-2">
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-12 ">
+            <img src="./web images/asset 66.svg" alt="" srcset="">
+          </div>
+        </div>
+        <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div class="flex flex-col gap-6 lg:w-1/2">
+            <span
+              class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step
+              2</span>
+            <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+            <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app
+              icon and window frame UI with no code.</p>
+            <ul class="grid grid-cols-2 gap-2">
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-12 ">
+            <img src="./web images/asset 66.svg" alt="" srcset="">
+          </div>
+        </div>
+        <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+          <div class="flex flex-col gap-6 lg:w-1/2">
+            <span
+              class="border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">Step
+              3</span>
+            <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+            <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app
+              icon and window frame UI with no code.</p>
+            <ul class="grid grid-cols-2 gap-2">
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+              <li class="flex gap-4">
+                <i class="fa-solid fa-check text-gray-500"></i>
+                <a href="" class="text-lg border-b border-black border-opacity-30 hover:border-opacity-80">Multiple
+                  windows </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-12 ">
+            <img src="./web images/asset 66.svg" alt="" srcset="">
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
+
+    <div class="h-[1000px]"></div>
   </main>
 
 </body>
