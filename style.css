@@ -26,4 +26,7 @@
     .gradient-hover-inner{
         @apply group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50;
     }
+    .h2-style{
+        @apply text-5xl leading-normal sm:font-semibold max-w-2xl;
+    }
 }
